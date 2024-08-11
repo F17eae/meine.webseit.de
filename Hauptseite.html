@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alalo Transport & Logistik GmbH</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #4CAF50;
+            --secondary-color: #333;
+            --text-color: #333;
+            --bg-color: #f4f4f4;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Header und Navigation */
+        header {
+            background-color: rgba(0, 0, 0, 0.8);
+            position: static; /* Header scrollt mit dem Inhalt */
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+
+        .logo img {
+            max-width: 175px;
+            height: auto;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            padding-bottom: 1rem; /* Abstand unterhalb des Menüs */
+        }
+
+        nav ul li {
+            margin-left: 1.5rem;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: var(--primary-color);
+        }
+
+        /* Hero-Bereich */
+        .hero {
+            background-image: url('file:///C:/Users/alalo/Webseite/Foto/foto1.png');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            position: relative;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            color: #fff;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.8rem 2rem;
+            background-color: var(--primary-color);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #45a049;
+        }
+
+        /* Sektionen */
+        .section {
+            padding: 5rem 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-title h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .section-title p {
+            font-size: 1.1rem;
+            color: #666;
+        }
+
+        /* Dienstleistungen und Neuigkeiten */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 1.5rem;
+        }
+
+        .card-content h3 {
+            margin-bottom: 1rem;
+        }
+
+        /* Kontakt */
+        .contact-info {
+            text-align: center;
+        }
+
+        .contact-info p {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--secondary-color);
+            color: #fff;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            nav ul {
+                display: none;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+                font-size: 1.5rem;
+                color: #fff;
+                cursor: pointer;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <img src="file:///C:/Users/alalo/Webseite/Foto/Logo.png" alt="Alalo Transport & Logistik GmbH Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a herf="Hauptseite.html">Hauptseite </a></li>
+                    <li><a href="#about">Über uns</a></li>
+                    <li><a href="services.html">Dienstleistungen</a></li>
+                    <li><a href="#news">Neuigkeiten</a></li>
+                    <li><a href="contact.html">Kontakt</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn">☰</div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container hero-content">
+            <h1>Ihr Partner für Transport & Logistik</h1>
+            <p>Zuverlässige und schnelle Dienstleistungen für alle Ihre Transportbedürfnisse</p>
+            <a href="contact.html" class="btn">Kontaktieren Sie uns</a>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Über uns</h2>
+                <p>Erfahren Sie mehr über unsere Expertise und unser Engagement</p>
+            </div>
+            <p>Wir bieten zuverlässige und schnelle Transport- und Logistikdienstleistungen für Ihre Bedürfnisse.Wir sind ein familiengeführtes Unternehmen, das mit Leidenschaft und Engagement für Ihre Transport- und Logistikbedürfnisse da ist. Obwohl wir ein junges Unternehmen sind, bringen wir durch unsere Erfahrung und unser Engagement für Qualität frischen Wind in die Branche. Wir setzen alles daran, Ihnen schnelle und zuverlässige Lösungen zu bieten – denn Ihr Erfolg ist unser Antrieb.</p>
+        </div>
+    </section>
+
+    <section id="news" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Aktuelle Neuigkeiten</h2>
+                <p>Bleiben Sie auf dem Laufenden mit unseren neuesten Updates</p>
+            </div>
+            <div class="grid">
+                <div class="card">
+                    <img src="file:///C:/Users/alalo/Webseite/Foto/news1.png" alt="Neue Transportmöglichkeiten">
+                    <div class="card-content">
+                        <h3>Neue Transportmöglichkeiten</h3>
+                        <p>Wir haben unser Angebot erweitert, um Ihnen noch bessere Lösungen zu bieten.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="file:///C:/Users/alalo/Webseite/Foto/news2.png" alt="Aktuelle Angebote">
+                    <div class="card-content">
+                        <h3>Aktuelle Angebote</h3>
+                        <p>Profitieren Sie von unseren aktuellen Sonderangeboten und sparen Sie bei Ihrem nächsten Transport.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Kontaktieren Sie uns</h2>
+                <p>Wir freuen uns, von Ihnen zu hören</p>
+            </div>
+            <div class="contact-info">
+                <p>Email: <a href="mailto:info@alalo-transport.de">info@alalo-transport.de</a></p>
+                <p>Telefon: +49 123 456 789</p>
+                <p>Adresse: Musterstraße 1, 12345 Musterstadt</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Alalo Transport & Logistik GmbH. Alle Rechte vorbehalten.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menü-Toggle
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const nav = document.querySelector('nav ul');
+
+        mobileMenuBtn.addEventListener('click', function() {
+            nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
+        });
+    </script>
+</body>
+</html>

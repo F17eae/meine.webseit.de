@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dienstleistungen | Alalo Transport & Logistik GmbH</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #4CAF50;
+            --secondary-color: #333;
+            --text-color: #333;
+            --bg-color: #f4f4f4;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-image: url('file:///C:/Users/alalo/Webseite/Foto/Hintergrund2.png'); /* Pfad zum Hintergrundbild */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Header und Navigation */
+        header {
+            background-color: rgba(0, 0, 0, 0.8);
+            position: static; /* Header scrollt mit dem Inhalt */
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+
+        .logo img {
+            max-width: 175px;
+            height: auto;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            padding-bottom: 1rem; /* Abstand unterhalb des Menüs */
+        }
+
+        nav ul li {
+            margin-left: 1.5rem;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: var(--primary-color);
+        }
+
+        /* Sektionen */
+        .section {
+            padding: 5rem 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-title h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .section-title p {
+            font-size: 1.1rem;
+            color: #666;
+        }
+
+        /* Unternavigation */
+        .sub-nav {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 2rem;
+        }
+
+        .sub-nav a {
+            padding: 0.5rem 1rem;
+            margin: 0 0.5rem;
+            text-decoration: none;
+            color: var(--text-color);
+            border: 1px solid var(--primary-color);
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .sub-nav a:hover,
+        .sub-nav a.active {
+            background-color: var(--primary-color);
+            color: #fff;
+        }
+
+        /* Dienstleistungen */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 1.5rem;
+        }
+
+        .card-content h3 {
+            margin-bottom: 1rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--secondary-color);
+            color: #fff;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav ul {
+                display: none;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+                font-size: 2.5rem;
+                color: #fff;
+                cursor: pointer;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <img src="file:///C:/Users/alalo/Webseite/Foto/Logo.png" alt="Alalo Transport & Logistik GmbH Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="Hauptseite.html"> Zuruck zum Hauptseite</a></li>
+
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn">☰</div>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Unsere Dienstleistungen</h2>
+                <p>Entdecken Sie, was wir Ihnen bieten können</p>
+                <p>                                            </p>
+                <p>                                              </p>
+                <p>                                              </p>
+                <p>                                              </p>
+                <p>Bitte wahlen Sie, welche Dienstleistung Sie möchten</p>
+            </div>
+            <div class="sub-nav">
+                <a href="#transport-logistik" class="active">Transport & Logistik</a>
+                <a href="#montage-services">Montage Services</a>
+            </div>
+            <div id="transport-logistik" class="grid" style="display: none;">
+                <div class="card">
+                    <img src="file:///C:/Users/alalo/Webseite/Foto/transport1.png" alt="Transportkapazitäten">
+                    <div class="card-content">
+                        <h3>Transportkapazitäten</h3>
+                        <p>Wir transportieren von 3.5 Tonnen bis 40 Tonnen und nehmen sowohl Kurz- als auch Dauerhaftaufträge entgegen.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="file:///C:/Users/alalo/Webseite/Foto/service1.png" alt="Zuverlässigkeit">
+                    <div class="card-content">
+                        <h3>Zuverlässigkeit</h3>
+                        <p>Wir bieten verlässliche und termingerechte Transportlösungen für alle Ihre Frachtanforderungen.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="file:///C:/Users/alalo/Webseite/Foto/service2.png" alt="Schnelligkeit">
+                    <div class="card-content">
+                        <h3>Schnelligkeit</h3>
+                        <p>Mit uns erreichen Ihre Sendungen ihre Ziele schnell und sicher.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="file:///C:/Users/alalo/Webseite/Foto/service3.png" alt="Erfahrung">
+                    <div class="card-content">
+                        <h3>Erfahrung</h3>
+                        <p>Unser erfahrenes Team garantiert Ihnen professionelle Dienstleistungen.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="montage-services" class="grid" style="display: none;">
+                <div class="card">
+                    <img src="file:///C:/Users/alalo/Webseite/Foto/montage1.png" alt="Qualifiziertes Team">
+                    <div class="card-content">
+                        <h3>Qualifiziertes Team</h3>
+                        <p>Unser Team besteht aus hochqualifizierten Fachleuten, die jahrelange Erfahrung in der Montage von Möbeln, Küchen, Fenstern und Markisen haben.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="file:///C:/Users/alalo/Webseite/Foto/montage2.png" alt="Montage von Möbeln">
+                    <div class="card-content">
+                        <h3>Montage von Möbeln</h3>
+                        <p>Wir montieren alle Arten von Möbeln, von Wohnzimmermöbeln bis hin zu Büromöbeln. Unser Ziel ist es, Ihnen einen reibungslosen und zufriedenstellenden Service zu bieten.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="file:///C:/Users/alalo/Webseite/Foto/montage3.png" alt="Montage von Küchen">
+                    <div class="card-content">
+                        <h3>Montage von Küchen</h3>
+                        <p>Unsere Experten sorgen für eine präzise und professionelle Montage Ihrer Küche. Wir arbeiten mit hoher Sorgfalt und Aufmerksamkeit für Details.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="file:///C:/Users/alalo/Webseite/Foto/montage4.png" alt="Montage von Fenstern und Markisen">
+                    <div class="card-content">
+                        <h3>Montage von Fenstern und Markisen</h3>
+                        <p>Wir bieten auch Montageservices für Fenster und Markisen. Unser Team sorgt für eine schnelle und präzise Installation, die Ihre Erwartungen übertreffen wird.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Alalo Transport & Logistik GmbH. Alle Rechte vorbehalten.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Unternavigation aktivieren
+        const subNavLinks = document.querySelectorAll('.sub-nav a');
+        const sections = document.querySelectorAll('.grid');
+
+        subNavLinks.forEach(link => {
+            link.addEventListener('click', function(event) {
+                event.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                sections.forEach(section => {
+                    if (section.id === targetId) {
+                        section.style.display = 'grid';
+                    } else {
+                        section.style.display = 'none';
+                    }
+                });
+                subNavLinks.forEach(link => link.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+
+        // Mobile Menü-Toggle
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const nav = document.querySelector('nav ul');
+
+        mobileMenuBtn.addEventListener('click', function() {
+            nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
+        });
+    </script>
+</body>
+</html>
